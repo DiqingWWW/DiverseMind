@@ -1,13 +1,13 @@
-# Verification — 2026-10-03
+# Verification — 2026-10-03 revision
 
-- TypeScript: `npx tsc --noEmit` passed.
-- ESLint: new routes, shared site/UI components, product components and content passed.
-- Browser desktop 1280px: exact canvas #FFFEFC and text #2F1852; home and Work render without horizontal overflow.
-- Work product order: DiverseMind Reading, Pause Lab, Guiding Hands, Focus Space, ADHD Hub. All three retained image assets loaded.
-- Language: switched English → Simplified Chinese; navigation, Work body, Resources article, and shared footer update. Route navigation retains the selection.
-- Resource detail: retained article with three sections and three source links.
-- Contact: verified original email, telephone and mailing address. Empty submission focuses required Name input and sends no request.
-- Mobile 390px: Home, About, Work, Resources, article and Contact all render without horizontal overflow, each with the shared contact footer; mobile menu opens and exposes all requested routes.
-- Actual contact delivery deliberately not tested: no unsolicited email or message was sent. The inherited receiver provides opaque responses; the UI distinguishes a sent request from confirmed delivery.
-- Narrow 320px: English pages and fully hydrated Chinese Home/About/Work/Resources/Contact have no horizontal overflow; reload preserves Chinese selection. Escape closes mobile navigation and returns focus to its trigger.
-- Production build completed successfully with six application routes.
+- TypeScript and focused ESLint passed after the new components/content were added. Production build passed; final packaging rebuild follows the narrow resource-card correction.
+- Actual desktop clicks: Home → About → Work → Resources → article → browser Back → Contact. All destination headings matched.
+- English → Chinese → About retains language across full page navigation. Mobile menu → Work closes correctly; Escape closes the menu.
+- Home ecosystem link → /work#guiding lands at the product with header clearance (110 px); all five IDs exist. Anchor scrolling is smooth so immediate post-click geometry is not final.
+- Desktop 1440 px and narrow 390 px visually inspected. Main routes checked at 991, 767 and 320 px. A 320 px Resources overflow was found and corrected; recheck scrollWidth=innerWidth=320. No broken images or captured console errors.
+- Actual computed fonts: Faire Octave heading and Suisse Intl body. Replayed finite line drawing. Reduced-motion implementation inspected in code; OS preference was not modified during testing.
+- Product image is a direct ARTICLE child with 0 px padding, no colored outer surface.
+- HTTP audit: all 5 products and 3 article sources returned 200; Instagram, LinkedIn and TikTok returned 200; Xiaohongshu redirects to login. Yelp returned 403, so its destination content remains unverified; original official URL preserved. See outputs/link-audit.json.
+- Production /about diagnosis via direct HTTP encountered a Cloudflare 403 challenge, not an application 404. Native anchors avoid client RSC navigation dependency, but the original online navigation failure’s root cause is not confirmed.
+- Contact endpoint excluded from link audit; no messages submitted. Mailto/tel targets retain original values. The inherited opaque response cannot confirm delivery.
+- Screenshots: outputs/home-revised.png, outputs/about-revised.png, outputs/work-unframed.png.

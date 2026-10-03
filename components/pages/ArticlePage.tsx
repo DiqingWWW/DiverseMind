@@ -1,5 +1,5 @@
 "use client";
-import Link from 'next/link';
+import Link from '@/components/ui/SiteLink';
 import { useLanguage } from '../site/LanguageProvider';
 import { ButtonLink } from '../ui/BrandButton';
 import { article } from '@/content/article';

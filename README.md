@@ -17,9 +17,9 @@ React 19 + TypeScript website using Vinext/Next-compatible routes. Local develop
 
 The public brand is **DiverseMind**. Lee Web and Media Studio appears only in company attribution and existing contact information. English is the initial language; users can switch to Simplified Chinese, remembered locally across routes and refreshes.
 
-Home contains replaceable introductory copy and a conceptual reading specimen; it does not claim to be a screenshot of the live reading product. About explicitly reserves the story for later. No fabricated company history, customer numbers, testimonials, pricing or launch promises.
+Home and About use the founder and ecosystem copy provided by the user on 2026-10-03, with Chinese translations. The reading specimen is conceptual, not a screenshot of the live reading product. No fabricated company history, customer numbers, testimonials, pricing or launch promises.
 
-Work order: DiverseMind Reading (largest section), Pause Lab, Guiding Hands, Focus Space, ADHD Hub. The final three product screenshots are reused from the original portfolio as content assets, not as site design references. Pause Lab retains its early-preview status.
+Work order: DiverseMind Reading (largest section), Pause Lab, Gentle Hand, Focus Room, ADHD Hub. The final three product screenshots are reused from the original portfolio as content assets, not as site design references. Pause Lab retains its early-preview status.
 
 ## Sources (2026-10-03)
 
@@ -30,7 +30,7 @@ Work order: DiverseMind Reading (largest section), Pause Lab, Guiding Hands, Foc
 - https://portfolio.leewebstudio.com/ — Guiding Hands, Focus Space, ADHD Hub text, URLs, images.
 - https://litera.zhiyuanf.com/ — reading material entry; supplemented by user-provided reading direction. Current detailed feature roadmap is not advertised as shipped capability.
 - https://pause-lab-launchpad.lovable.app/ — Pause Lab name, early-preview status and 3-step description.
-- Visual direction: local Ease study's palette 3 and user screenshot Desktop3.png. Old studio styling and interaction design were not used.
+- Visual direction: local Ease study's full visual language (type, layout, space, surfaces, components and line motion), palette 3, and user screenshot Desktop3.png. See DESIGN-SYSTEM.md. Old studio styling and interaction design were not used.
 
 ## Contact integration
 
@@ -39,3 +39,7 @@ The contact form uses the existing public Google Apps Script receiver, preservin
 ## Checks
 
 `npx tsc --noEmit` and focused ESLint pass. Browser checks are recorded in `QA.md`. Palette primitives: #FFFEFC, #2F1852, #E6A3C8, #EBE5D8, #DDD1E9, #F8F6F0.
+
+## Navigation
+
+`SiteLink` renders ordinary anchors for internal navigation, independent of client router/RSC interception. Full page requests support deep links, browser history and new tabs; language persists in local storage. Old product URLs are retained under the latest user-provided names Gentle Hand and Focus Room.

@@ -1,0 +1,7 @@
+/* Ease research → DiverseMind palette 3. See DESIGN-SYSTEM.md for provenance. */
+@font-face{font-family:'Faire Octave';src:url('/fonts/faire-octave-light.woff2') format('woff2');font-style:normal;font-weight:300;font-display:swap}
+@font-face{font-family:'Suisse Intl';src:url('/fonts/suisse-intl-regular.woff2') format('woff2');font-style:normal;font-weight:400;font-display:swap}
+:root{--font-heading:'Faire Octave',Georgia,'Songti SC',serif;--font-body:'Suisse Intl',Arial,'PingFang SC',sans-serif;--space-8:.5rem;--space-12:.75rem;--space-16:1rem;--space-24:1.5rem;--space-32:2rem;--space-40:2.5rem;--space-48:3rem;--space-64:4rem;--space-96:6rem;--space-112:7rem;--radius-control:1rem;--radius-panel:1rem;--radius-small:.5rem;--radius-large:1.5rem;--layout-max:103rem;--page-gutter:2.5rem;--section-space:7rem;--duration-control:300ms;--ease-control:cubic-bezier(.215,.61,.355,1);--line-duration:900ms;--line-stagger:45ms}
+@media(max-width:991px){:root{--page-gutter:1.5rem;--section-space:6rem}}
+@media(max-width:767px){:root{--section-space:4rem}}
+@media(max-width:479px){:root{--page-gutter:1rem}}
