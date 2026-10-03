@@ -17,7 +17,7 @@ React 19 + TypeScript website using Vinext/Next-compatible routes. Local develop
 
 The public brand is **DiverseMind**. Lee Web and Media Studio appears only in company attribution and existing contact information. English is the initial language; users can switch to Simplified Chinese, remembered locally across routes and refreshes.
 
-Home and About use the founder and ecosystem copy provided by the user on 2026-10-03, with Chinese translations. The reading specimen is conceptual, not a screenshot of the live reading product. No fabricated company history, customer numbers, testimonials, pricing or launch promises.
+Home and About use the founder and ecosystem copy provided by the user on 2026-10-03, with Chinese translations. Chinese display type uses a slightly smaller, heavier treatment, and short interface phrases omit full stops. The reading specimen is conceptual, not a screenshot of the live reading product. No fabricated company history, customer numbers, testimonials, pricing or launch promises.
 
 Work order: DiverseMind Reading (largest section), Pause Lab, Gentle Hand, Focus Room, ADHD Hub. The final three product screenshots are reused from the original portfolio as content assets, not as site design references. Pause Lab retains its early-preview status.
 
